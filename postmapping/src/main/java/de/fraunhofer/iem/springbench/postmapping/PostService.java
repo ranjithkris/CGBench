@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 public class PostService {
 	private final AtomicLong counter = new AtomicLong();
 
-	private final Set<Post> posts = new HashSet<>(Set.of(new Post(counter.incrementAndGet(), "Post one"),
+	private final Set<Post> posts = new HashSet<>(Arrays.asList(new Post(counter.incrementAndGet(), "Post one"),
 			new Post(counter.incrementAndGet(), "Post two"), new Post(counter.incrementAndGet(), "Post three"),
 			new Post(counter.incrementAndGet(), "Post four")));
 
