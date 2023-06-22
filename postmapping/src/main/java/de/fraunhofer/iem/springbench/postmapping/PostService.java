@@ -3,6 +3,7 @@ package de.fraunhofer.iem.springbench.postmapping;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicLong;
+import java.util.Arrays;
 
 import org.springframework.stereotype.Service;
 @Service
